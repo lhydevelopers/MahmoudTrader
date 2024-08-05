@@ -1,0 +1,79 @@
+<html lang="ar"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metatrader5 With Mahmoud</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container" id="main-container">
+        <h1>Metatrader5 With Mahmoud</h1>
+        <p>اكتشف مستقبل التداول وكيف يمكن أن يساعدك في تحقيق أهدافك المالية.</p>
+        
+        <button onclick="showLogin()">تسجيل الدخول</button>
+
+        <!-- Package Section -->
+        <div class="package-container" id="package-container">
+            <h2>باقة الدورة المميزة</h2>
+            <p>احصل على باقة شاملة للدورة التعليمية للتداول بفعالية وبأفضل سعر!</p>
+            <p class="price">سعر الدورة: $100</p>
+            <p>مزايا الباقة:</p>
+            <ul>
+                <li>دورة تعليمية شاملة حول التداول.</li>
+                <li>مواد تدريبية إضافية وملفات PDF.</li>
+                <li>دعم مباشر على مدار الساعة.</li>
+                <li>وصول غير محدود إلى مقاطع الفيديو والدروس.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div id="login-container" style="display:none;">
+        <h2>تسجيل الدخول</h2>
+        <form id="login-form">
+            <label for="username">اسم المستخدم:</label>
+            <input type="text" id="username" placeholder="أدخل اسم المستخدم" required="">
+            <label for="password">كلمة المرور:</label>
+            <input type="password" id="password" placeholder="أدخل كلمة المرور" required="">
+            <button type="submit">دخول</button>
+        </form>
+    </div>
+
+    <div class="container course-container" id="course-container" style="display:none;">
+        <h2>Welcome to Trade World!</h2>
+        <div class="video-container">
+            <div>
+                <img src="https://www.gulfupp.com/do.php?img=72198" alt="عنوان الفيديو 1">
+                <button class="play-button" onclick="playVideo(this)">▶</button>
+                <video id="video1" controls="" oncontextmenu="return false;">
+                    <source src="https://www.gulfupp.com/uploads/172286007850441.mp4#t=0.1" type="video/mp4">
+                    المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+                </video>
+                <p class="video-title">مقدمة عن عالم التداول</p>
+            </div>
+            <div>
+                <img src="https://www.gulfupp.com/do.php?img=72198" alt="عنوان الفيديو 2">
+                <button class="play-button" onclick="playVideo(this)">▶</button>
+                <video id="video2" controls="" oncontextmenu="return false;">
+                    <source src="https://www.gulfupp.com/uploads/172286603937521.mp4#t=0.1" type="video/mp4">
+                    المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+                </video>
+                <p class="video-title">أساسيات التداول</p>
+            </div>
+            <div>
+                <img src="https://www.gulfupp.com/do.php?img=72198" alt="عنوان الفيديو 3">
+                <button class="play-button" onclick="playVideo(this)">▶</button>
+                <video id="video3" controls="" oncontextmenu="return false;">
+                    <source src="https://www.gulfupp.com/uploads/172286021262011.mp4#t=0.1" type="video/mp4">
+                    المتصفح الخاص بك لا يدعم تشغيل الفيديو.
+                </video>
+                <p class="video-title">الفرق بين الأسواق المالية</p>
+            </div>
+            <!-- Add more videos as needed -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
